@@ -32,7 +32,7 @@ decameron-reservas/
 ## Cómo ejecutarlo
 
 ```bash
-git clone <URL-DE-TU-REPOSITORIO>
+git clone https://github.com/Alejandro-Garcia-B/Quiz-4-ING-SOFTWARE-II.git
 cd decameron-reservas
 pip install -r requirements.txt
 python main.py
@@ -63,19 +63,3 @@ total = precio base del hotel × multiplicador de habitación × personas × noc
 
 > Los precios son ilustrativos, no corresponden a tarifas reales.
 
-## Usar tus propias fotos
-
-Reemplaza los archivos de la carpeta `imagenes/` (`baru.jpg`, `panama.jpg`,
-`punta_sal.jpg`) conservando el nombre, o cambia el nombre de archivo en
-`decoracion.py`. Si una foto no existe, la app muestra un recuadro de color.
-
-## Crear el ejecutable (.exe)
-
-```bash
-pip install pyinstaller pillow
-pyinstaller --onefile --windowed --name DecameronReservas --add-data "imagenes;imagenes" main.py
-```
-
-En macOS/Linux usa `:` en lugar de `;` → `--add-data "imagenes:imagenes"`.
-El ejecutable queda en la carpeta `dist/`. Las reservas se guardan en `reservas.json`
-junto al programa.
